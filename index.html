@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig - The Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pig - The Dice Game</h1>
+    <div id="startArea">
+        <form id="startForm">
+            <label for="playerNames">Ange spelarnamn (separera med komma för flera spelare):</label>
+            <input type="text" id="playerNames" placeholder="Ex: Anna, Erik">
+            <button type="submit" id="startGame">Starta Spel</button>
+        </form>
+    </div>
+    <div id="gameArea">
+        <h2>Spelare: <span id="playerDisplay"></span></h2>
+        <p>Totala Poäng: <span id="totalScore">0</span></p>
+        <p>Omgångens Poäng: <span id="roundScore">0</span></p>
+        <p>Antal Omgångar: <span id="rounds">0</span></p>
+        
+
+        <div id="diceDisplay" class="die"></div>
+        <button id="rollDice">Kasta Tärning</button>
+        <button id="freezeScore">Frys Poäng</button>
+        <p id="message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
